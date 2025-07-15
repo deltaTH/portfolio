@@ -1865,3 +1865,21 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 }
 
+/* Make the testimonials modal larger and allow text to wrap fully */
+.testimonials-modal {
+  max-width: 800px !important;
+  width: 90vw !important;
+  min-width: 320px;
+  min-height: 200px;
+}
+
+/* Only affect modal's testimonial text, not the cards */
+.modal-container .testimonials-text[data-modal-text] {
+  display: block;
+  overflow: visible;
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+  max-height: none;
+  white-space: normal;
+}
+
